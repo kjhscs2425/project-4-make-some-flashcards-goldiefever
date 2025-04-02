@@ -158,7 +158,7 @@ Q:In bowling, three strikes in a row is called?
 A:A turkey
 
 Q:How many players are on each side of the net in beach volleyball?
-A:Two players
+A:Two
 
 Q:Who is the youngest golfer ever to win the U.S. Junior Amateur title?
 A:Tiger Woods
