@@ -110,7 +110,31 @@ def quiz(category, choice):
             questions_answered_wrong.append(random_question)
             quiz_data[category][random_question][1] += 1
             quiz_data[category][random_question][3] += 1
-    print(f"Good job!!! You answered {len(questions_answered_right)} out 20 questions correctly, and {len(questions_answered_wrong)} out of 20 questions incorrectly.")
+    def sum_stats():
+        global questions_answered_right
+        global questions_answered_wrong
+        global quiz_data
+        global general
+        global pop_culture
+        global sports
+        global animals
+        with open("flashcards_data.json","w") as f:
+            json.dump(quiz_data, f)
+        with open("flashcards_data.json", "r") as f:
+            json.load(f)
+        single_right = 0
+        single_wrong = 0
+        total_right = 0
+        total_wrong = 0
+        for question in quiz_data[category]:
+            single_right += int(quiz_data[category][question][0])
+            single_wrong += int(quiz_data[category][question][1])
+            total_right += int(quiz_data[category][question][2])
+            total_wrong += int(quiz_data[category][question][3])
+        
+        print(f"Good job!!! This time you answered {single_right}/20 questions correctly in the category {category}")
+        print(f"In total, you answered {total_right}/20 questions correctly in the category {category}")
+    sum_stats()
     # Write the `data` variable to the file "flashcards_data.json"
     for random_question in random_questions:
         quiz_data[category][random_question][0] = 0
