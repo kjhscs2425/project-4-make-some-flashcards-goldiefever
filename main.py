@@ -1,4 +1,7 @@
 import random
+import os
+import json
+
 # empty dictionaries to add the q's and a's in proposal.md
 general = {}
 pop_culture = {}
@@ -45,35 +48,75 @@ with open ("proposal.md", "r") as f:
 questions_answered_right = []
 questions_answered_wrong = []
 
+# Check if the file exists.
+if os.path.isfile("flashcards_data.json"):
+    with open("flashcards_data.json","r") as f:
+        quiz_data = json.load(f)
+else:
+    # If it doesn't, make an empty dictionary called quiz_data
+    quiz_data = {}
+
+# username = input("What is your username? ")
+
 # general_questions= list(general.keys())
 # pop_culture_questions= list(pop_culture.keys())
 # sports_questions= list(sports.keys())
 # animals_questions= list(animals.keys())
 
 # directs you to trivia of the topick you choose
+
 def main():
-    choice = input("Its time for ... TRRRRRIVIA!!! What category of trivia do you want? General(g), Pop Culture(p), Sports(s), Animals(a)")
-    if choice == "g":
-        quiz(general)
-    if choice == "p":
-        quiz(pop_culture)
-    if choice == "s":
-        quiz(sports)
-    if choice == "a":
-        quiz(animals)
+    choice = (input("Its time for ... TRRRRRIVIA!!! What category of trivia do you want? The options are General, Pop Culture, Sports, Animals \n"))
+    print(choice)
+    print("test1")
+    if choice == "general":
+        print("a")
+        quiz("general", general)
+    elif choice == "pop culture":
+        print("b")
+        quiz("pop culture", pop_culture)
+    elif choice == "sports":
+        print("c")
+        quiz("sports", sports)
+    elif choice == "animals":
+        print("d")
+        quiz("animals", animals)
 
 # asks the questions in random order, and tells you if you answered correctly, then appends questions_answered_right and questions_answered_wrong
-def quiz(topic):
-    random_questions = (random.sample(list(topic.keys()), 20))
+def quiz(category, choice):
+    print("test2")
+    global questions_answered_right
+    global questions_answered_wrong
+    global quiz_data
+    global general
+    global pop_culture
+    global sports
+    global animals
+    random_questions = list(choice.keys())
+    random.shuffle(random_questions)
+    if category not in quiz_data:
+        quiz_data[category]={}
     for random_question in random_questions:
         user_answer = input((random_question) + " ")
-        if user_answer == ((topic[random_question])).lower():
+        if random_question not in quiz_data[category]:
+            quiz_data[category][random_question]=[0,0,0,0]
+        if user_answer == (choice[random_question]).lower():
             print("yay! you answered correctly!")
             questions_answered_right.append(random_question)
-        elif user_answer != ((topic[random_question])).lower():
+            quiz_data[category][random_question][0] += 1
+            quiz_data[category][random_question][2] += 1
+        elif user_answer != ((choice[random_question])).lower():
             print("oh no ... better luck next time")
             questions_answered_wrong.append(random_question)
-    print(f"Good job!!! You answered {len(questions_answered_right)} out 20 questions correctly.")
+            quiz_data[category][random_question][1] += 1
+            quiz_data[category][random_question][3] += 1
+    print(f"Good job!!! You answered {len(questions_answered_right)} out 20 questions correctly, and {len(questions_answered_wrong)} out of 20 questions incorrectly.")
+    # Write the `data` variable to the file "flashcards_data.json"
+    for random_question in random_questions:
+        quiz_data[category][random_question][0] = 0
+        quiz_data[category][random_question][1] = 0
+    with open("flashcards_data.json","w") as f:
+        json.dump(quiz_data, f)
 
 # runs the code
 main()
