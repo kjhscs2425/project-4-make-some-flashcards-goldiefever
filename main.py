@@ -56,7 +56,7 @@ else:
     # If it doesn't, make an empty dictionary called quiz_data
     quiz_data = {}
 
-# username = input("What is your username? ")
+username = input("What is your username? ")
 
 # general_questions= list(general.keys())
 # pop_culture_questions= list(pop_culture.keys())
@@ -66,25 +66,25 @@ else:
 # directs you to trivia of the topick you choose
 
 def main():
+    global username
     choice = (input("Its time for ... TRRRRRIVIA!!! What category of trivia do you want? The options are General, Pop Culture, Sports, Animals \n"))
     print(choice)
     print("test1")
     if choice == "general":
         print("a")
-        quiz("general", general)
+        quiz("general", general, username)
     elif choice == "pop culture":
         print("b")
-        quiz("pop culture", pop_culture)
+        quiz("pop culture", pop_culture, username)
     elif choice == "sports":
         print("c")
-        quiz("sports", sports)
+        quiz("sports", sports, username)
     elif choice == "animals":
         print("d")
-        quiz("animals", animals)
+        quiz("animals", animals, username)
 
 # asks the questions in random order, and tells you if you answered correctly, then appends questions_answered_right and questions_answered_wrong
-def quiz(category, choice):
-    print("test2")
+def quiz(category, choice, user):
     global questions_answered_right
     global questions_answered_wrong
     global quiz_data
@@ -92,24 +92,42 @@ def quiz(category, choice):
     global pop_culture
     global sports
     global animals
+    global username
+    # with open ("flashcards_data.json","r") as f:
+    #     #READ THE FILE TO KNOW WHAT BOX  EACH Q IS IN!!!
     random_questions = list(choice.keys())
     random.shuffle(random_questions)
-    if category not in quiz_data:
-        quiz_data[category]={}
+    if user not in quiz_data:
+        quiz_data[user] = {}
+    if category not in quiz_data[user]:
+        quiz_data[user][category]={}
     for random_question in random_questions:
+        if random_question not in quiz_data[user][category]:
+            quiz_data[user][category][random_question]=[0,0,0,0,1]
+        # elif quiz_data[user][category][random_question][4] == 1:
+        #     box1_weight = 8
+        # elif quiz_data[user][category][random_question][4] == 2:
+        #     box2_weight = 4
+        # elif quiz_data[user][category][random_question][4] == 3:
+        #     box3_weight = 2
+        # elif quiz_data[user][category][random_question][4] == 4:
+        #     box4_weight = 1
+        # elif quiz_data[user][category][random_question][4] == 5:
+        #     box_5weight = 0
         user_answer = input((random_question) + " ")
-        if random_question not in quiz_data[category]:
-            quiz_data[category][random_question]=[0,0,0,0]
         if user_answer == (choice[random_question]).lower():
             print("yay! you answered correctly!")
             questions_answered_right.append(random_question)
-            quiz_data[category][random_question][0] += 1
-            quiz_data[category][random_question][2] += 1
+            quiz_data[user][category][random_question][0] += 1
+            quiz_data[user][category][random_question][2] += 1
+            if quiz_data[user][category][random_question][4] <= 4:
+                quiz_data[user][category][random_question][4] += 1
         elif user_answer != ((choice[random_question])).lower():
             print("oh no ... better luck next time")
             questions_answered_wrong.append(random_question)
-            quiz_data[category][random_question][1] += 1
-            quiz_data[category][random_question][3] += 1
+            quiz_data[user][category][random_question][1] += 1
+            quiz_data[user][category][random_question][3] += 1
+            quiz_data[user][category][random_question][4] = 1
     def sum_stats():
         global questions_answered_right
         global questions_answered_wrong
@@ -118,29 +136,47 @@ def quiz(category, choice):
         global pop_culture
         global sports
         global animals
+        global username
         with open("flashcards_data.json","w") as f:
             json.dump(quiz_data, f)
         with open("flashcards_data.json", "r") as f:
             json.load(f)
-        single_right = 0
-        single_wrong = 0
+        category_single_right = 0
+        category_single_wrong = 0
+        category_total_right = 0
+        category_total_wrong = 0
         total_right = 0
         total_wrong = 0
-        for question in quiz_data[category]:
-            single_right += int(quiz_data[category][question][0])
-            single_wrong += int(quiz_data[category][question][1])
-            total_right += int(quiz_data[category][question][2])
-            total_wrong += int(quiz_data[category][question][3])
-        
-        print(f"Good job!!! This time you answered {single_right}/20 questions correctly in the category {category}")
-        print(f"In total, you answered {total_right}/20 questions correctly in the category {category}")
+        for question in quiz_data[user][category]:
+            category_single_right += int(quiz_data[user][category][question][0])
+            category_single_wrong += int(quiz_data[user][category][question][1])
+            category_total_right += int(quiz_data[user][category][question][2])
+            category_total_wrong += int(quiz_data[user][category][question][3])
+            if "general" in quiz_data[user]:
+                    total_right += quiz_data[user]["general"][question][2]
+            if "pop culture" in quiz_data[user]:
+                    total_right += quiz_data[user]["pop culture"][question][2]
+            if "sports" in quiz_data[user]:
+                    total_right += quiz_data[user]["sports"][question][2]
+            if "animals" in quiz_data[user]:
+                    total_right += quiz_data[user]["animals"][question][2]
+            if "general" in quiz_data[user]:
+                    total_wrong += quiz_data[user]["general"][question][3]
+            if "pop culture" in quiz_data[user]:
+                    total_wrong += quiz_data[user]["pop culture"][question][3]
+            if "sports" in quiz_data[user]:
+                    total_wrong += quiz_data[user]["sports"][question][3]
+            if "animals" in quiz_data[user]:
+                    total_wrong += quiz_data[user]["animals"][question][3]
+        print(f"Good job {username}!!! This time you answered {category_single_right}/20 questions correctly in the category {category}")
+        print(f"In total, you have answered {category_total_right} questions correctly in the category {category}, and {total_right} questions correctly overall")
     sum_stats()
     # Write the `data` variable to the file "flashcards_data.json"
     for random_question in random_questions:
-        quiz_data[category][random_question][0] = 0
-        quiz_data[category][random_question][1] = 0
+        quiz_data[user][category][random_question][0] = 0
+        quiz_data[user][category][random_question][1] = 0
     with open("flashcards_data.json","w") as f:
-        json.dump(quiz_data, f)
+        json.dump(quiz_data, f, indent = 2)
 
 # runs the code
 main()

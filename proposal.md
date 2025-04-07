@@ -1,4 +1,4 @@
-1. Write at least 3 questions and answers:
+Write at least 3 questions and answers:
 General:
 Q:In what country did the first Starbucks open outside of North America? 
 A:Japan
@@ -68,7 +68,7 @@ A:Vin Diesel
 Q:This singer is famously called the "Material Girl”?
 A:Madonna
 
-Q: Which famous pop band was called "Kara’s Flowers" up until 2001?
+Q: Which famous pop band was called "Kara's Flowers" up until 2001?
 A:Maroon 5
 
 Q:What was the coffee shop named in the hit TV show Friends?
