@@ -1,360 +1,46 @@
 {
-  "orliroy1": {
-    "pop culture": {
-      "Who won the first season of American Idol?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What was the first Disney animated feature movie that was not based on an already existing story?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is Rihanna's real name?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "On The Mandalorian, what is Baby Yoda's real name?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What is Taylor Swift's middle name?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What was the coffee shop named in the hit TV show Friends?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What was the first live-action Disney remake to get a PG-13 rating?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What is the longest-running Broadway show?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Before he was the frontman for Foo Fighters, Dave Grohl was the drummer for which band?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "In which country did the first season of Survivor take place?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "Which country is Ryan Gosling from?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      " Which famous pop band was called \"Kara\u2019s Flowers\" up until 2001?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What singer holds the most Grammy nominations?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "Mickey Mouse almost went by a different name. What was it?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "This singer is famously called the \"Material Girl\u201d?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What's the name of Miley Cyrus' famous godmother?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What animal did Britney Spears famously carry on her shoulders during a performance?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who provided the voice of Groot in the Guardians of the Galaxy movies?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who was Walt Disney's favorite princess?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who is the most recent person to achieve EGOT (Emmy, Grammy, Oscar, Tony) status?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ]
-    }
-  },
-  "mirimonster": {
-    "pop culture": {
-      "Mickey Mouse almost went by a different name. What was it?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "In which country did the first season of Survivor take place?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "On The Mandalorian, what is Baby Yoda's real name?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What was the first Disney animated feature movie that was not based on an already existing story?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "Before he was the frontman for Foo Fighters, Dave Grohl was the drummer for which band?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What is Taylor Swift's middle name?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is Rihanna's real name?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who was Walt Disney's favorite princess?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What animal did Britney Spears famously carry on her shoulders during a performance?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What was the coffee shop named in the hit TV show Friends?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      " Which famous pop band was called \"Kara\u2019s Flowers\" up until 2001?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who provided the voice of Groot in the Guardians of the Galaxy movies?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What was the first live-action Disney remake to get a PG-13 rating?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "This singer is famously called the \"Material Girl\u201d?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What's the name of Miley Cyrus' famous godmother?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is the longest-running Broadway show?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who won the first season of American Idol?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What singer holds the most Grammy nominations?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Which country is Ryan Gosling from?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Who is the most recent person to achieve EGOT (Emmy, Grammy, Oscar, Tony) status?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    "test": {
-      "1": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "2": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "3": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "4": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "5": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    }
-  },
-  "theunicorns5": {
+  "miriam": {
     "general": {
-      "What is the sixth sign of the zodiac?": [
+      "In what country did the first Starbucks open outside of North America? ": [
+        0,
+        0,
+        3,
+        0,
+        5
+      ],
+      "What does CODA stand for?": [
+        0,
+        0,
+        4,
+        0,
+        5
+      ],
+      " Where were the Declaration of Independence, the Constitution and the Bill of Rights stored during World War II?": [
         0,
         0,
         1,
         0,
-        2
+        5
       ],
-      "Who was the first woman to win a Nobel Prize?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Where is the \"Mona Lisa\" painting on display?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Pocahontas was baptized and given what English name?": [
+      "What is the tiny piece at the end of a shoelace called?": [
         0,
         0,
         1,
         0,
-        2
+        5
       ],
-      " In 2009, what became the first Morse code character to be added since WWII?": [
+      "Who was the first televised President?": [
+        0,
+        0,
+        3,
+        0,
+        5
+      ]
+    }
+  },
+  "eb": {
+    "general": {
+      "In what country did the first Starbucks open outside of North America? ": [
         0,
         0,
         0,
@@ -368,55 +54,6 @@
         0,
         2
       ],
-      "What is the tiny piece at the end of a shoelace called?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What is the best-selling book of all time?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "In what country did the first Starbucks open outside of North America? ": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What was the original purpose of the tiny pocket in jeans?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "When did Facebook first launch?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Demolition of the Berlin wall separating East and West Germany began in what year?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is the human body's heaviest organ?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
       " Where were the Declaration of Independence, the Constitution and the Bill of Rights stored during World War II?": [
         0,
         0,
@@ -424,21 +61,46 @@
         1,
         1
       ],
-      "From 1944 to 1945, the Germans increased their troops surrounding the Ardennes Forest for what World War II Battle and major counteroffensive? It gets its name from the rounded swelling of German troops in the region.": [
+      "What is the tiny piece at the end of a shoelace called?": [
+        0,
+        0,
+        0,
+        1,
+        5
+      ],
+      "Who was the first televised President?": [
         0,
         0,
         0,
         1,
         1
+      ]
+    }
+  },
+  "hi": {
+    "general": {
+      "In what country did the first Starbucks open outside of North America? ": [
+        0,
+        0,
+        2,
+        0,
+        5
       ],
-      "Which kind of bulbs were once exchanged as a form of currency?": [
+      "What does CODA stand for?": [
         0,
         0,
         0,
         1,
+        5
+      ],
+      " Where were the Declaration of Independence, the Constitution and the Bill of Rights stored during World War II?": [
+        0,
+        0,
+        0,
+        2,
         1
       ],
-      "In what year was the Internet opened to the public?": [
+      "What is the tiny piece at the end of a shoelace called?": [
         0,
         0,
         0,
@@ -451,242 +113,45 @@
         0,
         1,
         1
-      ],
-      "Originally, Amazon only sold what kind of product?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What does SPF in sunscreen stand for?": [
-        0,
-        0,
-        0,
-        1,
-        1
       ]
     }
   },
-  "poppy": {
-    "animals": {
-      "What is the loudest animal on Earth?": [
+  "a": {
+    "general": {
+      "In what country did the first Starbucks open outside of North America? ": [
         0,
         0,
+        4,
         0,
-        1,
-        1
+        5
       ],
-      "What is the tallest breed of dog?": [
+      "What does CODA stand for?": [
         0,
         0,
-        1,
+        4,
         0,
-        2
+        5
       ],
-      "What are the only birds that can fly backward?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "How many compartments do cows have in their stomach?": [
+      " Where were the Declaration of Independence, the Constitution and the Bill of Rights stored during World War II?": [
         0,
         0,
         1,
         0,
-        2
+        5
       ],
-      "How many hearts does an octopus have?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "Which bird has the largest wingspan?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "The age of a lion can be determined by its?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is the color of the most poisonous frog in the world?": [
+      "What is the tiny piece at the end of a shoelace called?": [
         0,
         0,
         1,
         0,
-        2
+        5
       ],
-      "What are the only two mammals that lay eggs?": [
+      "Who was the first televised President?": [
         0,
         0,
+        2,
         0,
-        1,
-        1
-      ],
-      "Which animal is the fastest on land?": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "What shark is thought to be the largest to have ever lived on Earth?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What does the bat use to navigate and locate its prey?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What creature with an equine name has no teeth or stomach, mates for life and is the only species on Earth where the male carries the unborn offspring?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "The largest living lizard can't breathe fire, but it does have a venomous bite that inhibits blood clotting. What creature is this?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is the largest land predator?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What are male honeybees called?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "How many bones do sharks have?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What bird cannot move their eyeballs?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What is the national animal of Scotland?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "What color is a giraffe's tongue?": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    }
-  },
-  "mimi": {
-    "test": {
-      "1": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "2": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "d": [
-        0,
-        1,
-        0,
-        1,
-        1
-      ],
-      "4": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "5": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
-    }
-  },
-  "hi": {
-    "test": {
-      "1": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "2": [
-        0,
-        0,
-        0,
-        3,
-        1
-      ],
-      "d": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "4": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "5": [
-        0,
-        0,
-        0,
-        0,
-        1
+        5
       ]
     }
   }
