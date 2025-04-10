@@ -11,7 +11,7 @@ line_number = 1
 question = None
 answer = None
 
-length = input("How hard do you want your flashcards to be? Short(s) - 5 flashcards, Medium(m) - 10 flashcards, or Long(l) - 20 flashcards")
+length = input("How hard do you want your flashcards to be? Short(s) - 5 flashcards, Medium(m) - 10 flashcards, or Long(l) - 20 flashcards ")
 if length == "s":
      flashcard_amount = [16,78,140,203]
 if length == "m":
@@ -22,28 +22,28 @@ if length == "l":
 # writes the q's and a's to keys and values in the dictionary of their corresponding topic
 with open ("proposal.md", "r") as f:
     for line in f:
-        if line_number >= 3 and line_number <= flashcard_num[0]:
+        if line_number >= 3 and line_number <= flashcard_amount[0]:
             g = general
             if line[0]=="Q":
                 question = line[2:-1]
             if line[0]=="A":
                 answer = line[2:-1]
                 g[question] = answer
-        if line_number >=65 and line_number <= flashcard_num[1]:
+        if line_number >=65 and line_number <= flashcard_amount[1]:
             p = pop_culture
             if line[0]=="Q":
                 question = line[2:-1]
             if line[0]=="A":
                 answer = line[2:-1]
                 p[question] = answer
-        if line_number >= 127 and line_number <= flashcard_num[2]:
+        if line_number >= 127 and line_number <= flashcard_amount[2]:
             s = sports
             if line[0]=="Q":
                 question = line[2:-1]
             if line[0]=="A":
                 answer = line[2:-1]
                 s[question] = answer
-        if line_number >=190 and line_number <= flashcard_num[3] :
+        if line_number >=190 and line_number <= flashcard_amount[3] :
             a = animals
             if line[0]=="Q":
                 question = line[2:-1]
