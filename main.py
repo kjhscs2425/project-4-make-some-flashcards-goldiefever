@@ -180,21 +180,21 @@ def quiz(category, choice, user):
             category_total_right += int(quiz_data[user][category][question][2])
             category_total_wrong += int(quiz_data[user][category][question][3])
             if "general" in quiz_data[user]:
-                    total_right += quiz_data[user]["general"][question][2]
+                    total_right += int(quiz_data[user]["general"][question][2])
             if "pop culture" in quiz_data[user]:
-                    total_right += quiz_data[user]["pop culture"][question][2]
+                    total_right += int(quiz_data[user]["pop culture"][question][2])
             if "sports" in quiz_data[user]:
-                    total_right += quiz_data[user]["sports"][question][2]
+                    total_right += int(quiz_data[user]["sports"][question][2])
             if "animals" in quiz_data[user]:
-                    total_right += quiz_data[user]["animals"][question][2]
+                    total_right += int(quiz_data[user]["animals"][question][2])
             if "general" in quiz_data[user]:
-                    total_wrong += quiz_data[user]["general"][question][3]
+                    total_wrong += int(quiz_data[user]["general"][question][3])
             if "pop culture" in quiz_data[user]:
-                    total_wrong += quiz_data[user]["pop culture"][question][3]
+                    total_wrong += int(quiz_data[user]["pop culture"][question][3])
             if "sports" in quiz_data[user]:
-                    total_wrong += quiz_data[user]["sports"][question][3]
+                    total_wrong += int(quiz_data[user]["sports"][question][3])
             if "animals" in quiz_data[user]:
-                    total_wrong += quiz_data[user]["animals"][question][3]
+                    total_wrong += int(quiz_data[user]["animals"][question][3])
         # if category_single_right == 0 and category_single_wrong == 0:
         #     end_response = input(f"Yay!!! You have finished the leitner box flashcards system in the category {category}. \n If you would like to play again, type 'a', otherwise type another letter")
         #     if end_response == "a":
