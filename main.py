@@ -142,7 +142,7 @@ def quiz(category, choice, user):
                 if quiz_data[user][category][selected_question][4] <= 4:
                     quiz_data[user][category][selected_question][4] += 1
             elif user_answer.lower() != ((choice[selected_question])).lower():
-                print("oh no ... better luck next time")
+                print(f"oh no ... better luck next time. The correct answer is: {choice[selected_question].lower()}")
                 quiz_data[user][category][selected_question][1] += 1
                 quiz_data[user][category][selected_question][3] += 1
                 quiz_data[user][category][selected_question][4] = 1
