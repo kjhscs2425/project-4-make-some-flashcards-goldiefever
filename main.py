@@ -167,7 +167,6 @@ def quiz(category, choice, user):
         category_total_wrong = 0
         total_right = 0
         total_wrong = 0
-        quiz_data[user][category][selected_question][4]=5
         # if quiz_data[user][category][selected_question][4]==5:
         #     end_response = input(f"Yay!!! You have finished the leitner box flashcards system in the category {category}. \n If you would like to play again, type 'a', otherwise type another letter")
         #     if end_response == "a":
