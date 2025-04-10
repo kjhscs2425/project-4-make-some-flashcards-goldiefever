@@ -196,16 +196,16 @@ def quiz(category, choice, user):
                     total_wrong += quiz_data[user]["sports"][question][3]
             if "animals" in quiz_data[user]:
                     total_wrong += quiz_data[user]["animals"][question][3]
-        if category_single_right == 0 and category_single_wrong == 0:
-            end_response = input(f"Yay!!! You have finished the leitner box flashcards system in the category {category}. \n If you would like to play again, type 'a', otherwise type another letter")
-            if end_response == "a":
-                main()
-            else:
-                return
-        else:
-            print(f"Good job {username}!!! This time you answered {category_single_right}/{len(questions_asked)} questions correctly in the category {category}")
-            print(f"In total, you have answered {category_total_right} questions correctly in the category {category}, and {total_right} questions correctly overall")
-            sum_stats()
+        # if category_single_right == 0 and category_single_wrong == 0:
+        #     end_response = input(f"Yay!!! You have finished the leitner box flashcards system in the category {category}. \n If you would like to play again, type 'a', otherwise type another letter")
+        #     if end_response == "a":
+        #         main()
+        #     else:
+        #         return
+        # else:
+        print(f"Good job {username}!!! This time you answered {category_single_right}/{len(questions_asked)} questions correctly in the category {category}")
+        print(f"In total, you have answered {category_total_right} questions correctly in the category {category}, and {total_right} questions correctly overall")
+    sum_stats()
     
     # Write the `data` variable to the file "flashcards_data.json"
     for random_question in random_questions:
