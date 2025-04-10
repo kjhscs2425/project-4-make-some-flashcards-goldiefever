@@ -81,6 +81,9 @@ def main():
         quiz("sports", sports, username)
     elif choice == "animals":
         quiz("animals", animals, username)
+    else:
+         print("Oh no, that is not an option! Try again")
+         main()
 
 # asks the questions in random order, and tells you if you answered correctly, then appends questions_answered_right and questions_answered_wrong
 def quiz(category, choice, user):

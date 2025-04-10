@@ -154,5 +154,153 @@
         5
       ]
     }
+  },
+  "maya": {
+    "general": {
+      "In what country did the first Starbucks open outside of North America? ": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "What does CODA stand for?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      " Where were the Declaration of Independence, the Constitution and the Bill of Rights stored during World War II?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "What is the tiny piece at the end of a shoelace called?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "Who was the first televised President?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "Pocahontas was baptized and given what English name?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "Originally, Amazon only sold what kind of product?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      " In 2009, what became the first Morse code character to be added since WWII?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Which kind of bulbs were once exchanged as a form of currency?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "What does SPF in sunscreen stand for?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  "m": {
+    "pop culture": {
+      "Who provided the voice of Groot in the Guardians of the Galaxy movies?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "This singer is famously called the \"Material Girl\u201d?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      " Which famous pop band was called \"Kara's Flowers\" up until 2001?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "What was the coffee shop named in the hit TV show Friends?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "What was the first Disney animated feature movie that was not based on an already existing story?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "What is the longest-running Broadway show?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "What is Rihanna's real name?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "Mickey Mouse almost went by a different name. What was it?": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "Who was Walt Disney's favorite princess?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Before he was the frontman for Foo Fighters, Dave Grohl was the drummer for which band?": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
   }
 }
